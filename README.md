@@ -112,17 +112,48 @@ plt.show()
 4.Sets the x-axis limits of the plot to [0, 256] which corresponds to the range of pixel values.
 5.Displays the plot.
 
-
-```
 ## Range
-```
+`
 num = list(range(10))
 previousNum = 0
 for i in num:
-    sum = previousNum + i
-    print('Current Number '+ str(i) + 'Previous Number ' + str(previousNum) + 'is ' + str(sum)) # <- This is the issue.
-    previousNum=i
 
+1.Creates a list containing numbers from 0 to 9.
+2.Initializes a variable 'previousNum' to store the previous number in the iteration.
+3.Iterates through each number in the 'num' list.
+
+sum = previousNum + i
+print('Current Number '+ str(i) + 'Previous Number ' + str(previousNum) + 'is ' + str(sum)) # <- This is the issue.
+previousNum=i
+`
+1.Calculates the sum of the current number 'i'and the previous number 'previousNum'.
+
+2.This line prints the current number (i), the previous number (previousNum), and their sum (sum).
+
+3.Updates the previousNum variable for the next iteration.
+
+4.statement will display the current number, the previous number, and their sum in a more readable format.
+# Output
+Current Number 0Previous Number 0is 0
+
+Current Number 1Previous Number 0is 1
+
+Current Number 2Previous Number 1is 3
+
+Current Number 3Previous Number 2is 5
+
+Current Number 4Previous Number 3is 7
+
+Current Number 5Previous Number 4is 9
+
+Current Number 6Previous Number 5is 11
+
+Current Number 7Previous Number 6is 13
+
+Current Number 8Previous Number 7is 15
+
+Current Number 9Previous Number 8is 17
+```
 
 ## video
 
