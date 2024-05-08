@@ -80,6 +80,10 @@ These lines import necessary libraries:
  ```
 img = v.imread('/home/pavaniankam/Desktop/Pavani/blue-cars.jpeg')
 ```
+
+![blue-cars](https://github.com/pavaniankam/pavani/assets/169125920/baa91c38-b5ea-473c-853b-83a52cd8a440)
+
+
 1.Reads an image file named "blue-cars.jpeg" located at the given file path.
 2.cv.imread() loads an image from the specified file path.
 ```
