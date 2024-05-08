@@ -112,8 +112,8 @@ plt.show()
 4.Sets the x-axis limits of the plot to [0, 256] which corresponds to the range of pixel values.
 5.Displays the plot.
 
-[blue-cars](https://github.com/pavaniankam/pavani/assets/169125920/43e64ffc-4b46-4202-af9e-0816426e9eab)
 
+```
 ## Range
 ```
 num = list(range(10))
@@ -123,7 +123,7 @@ for i in num:
     print('Current Number '+ str(i) + 'Previous Number ' + str(previousNum) + 'is ' + str(sum)) # <- This is the issue.
     previousNum=i
 
-````
+
 ## video
 
 ````
