@@ -11,12 +11,7 @@ csv_file = "/home/pavaniankam/Downloads/7622202030987_bounding_box.csv"
 image_dir = "/home/pavaniankam/Downloads/7622202030987"
 output_dir = "/home/pavaniankam/Downloads/7622202030987_with_boxes"
 ```
-
-
-
-
-
-
+![7622202030987_f306535d741c9148dc458acbbc887243_L_487](https://github.com/pavaniankam/pavani/assets/169125920/cb37a229-b7ca-4a0e-973a-29cbbbef1669)
 
 ```
 os.makedirs(output_dir, exist_ok=True)
