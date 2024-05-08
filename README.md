@@ -72,8 +72,8 @@ with open(csv_file, 'r') as file:
 ```
 Here is the Output of this
 
-/home/pavaniankam/Downloads/7622202030987_with_boxes/0_7622202030987_f306535d741c9148dc458acbbc887243_L_487.png
-
+![full_7622202030987_f306535d741c9148dc458acbbc887243_L_529](https://github.com/pavaniankam/pavani/assets/169125920/5efc7b12-d133-41f4-9bee-b02af6bbd480)
+![0_7622202030987_f306535d741c9148dc458acbbc887243_L_488](https://github.com/pavaniankam/pavani/assets/169125920/8d5eb1b7-513e-474a-8b88-4ae943f144b3)
 
 ## Imagehistogram
 ```
