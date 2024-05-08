@@ -68,7 +68,7 @@ Here is the Output of this
 /home/pavaniankam/Downloads/7622202030987_with_boxes
 
 ## Imagehistogram
-````
+```
 import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
@@ -110,9 +110,9 @@ plt.show()
 3.Plots the histogram.
 4.Sets the x-axis limits of the plot to [0, 256] which corresponds to the range of pixel values.
 5.Displays the plot.
-````
+
 ## Range
-````
+```
 num = list(range(10))
 previousNum = 0
 for i in num:
@@ -152,36 +152,36 @@ Current Number 7Previous Number 6is 13
 Current Number 8Previous Number 7is 15
 
 Current Number 9Previous Number 8is 17
-````
+
 ## Video
-
+```
 import cv2
-
+```
 1.Imports the OpenCV library
-
+```
 vid = cv2.VideoCapture(0)
-
+```
 1.Creates a VideoCapture object named vid which represents the video stream from the default camera (index 0).
-
+```
 while(True): 
       ret, frame = vid.read()
-
+```
 1.Reads a frame from the video stream.
 2.ret is a boolean value indicating whether the frame was successfully read.
 3.frame is the image frame.
-
+```
  cv2.imshow('frame', frame)
-
+```
 1.cv2.imshow() is a function in OpenCV used to display images or videos.
-
+```
       if cv2.waitKey(1) & 0xFF == ord('q'): 
         break
-
+```
 1.cv2.waitKey() is a function that waits for a key event in a specified time duration.
-
+```
 vid.release() 
 cv2.destroyAllWindows() 
-
+```
 1.Releases the VideoCapture object, releasing the camera.
 
 2.Closes all OpenCV windows.
