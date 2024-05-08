@@ -67,7 +67,6 @@ with open(csv_file, 'r') as file:
 Here is the Output of this
 /home/pavaniankam/Downloads/7622202030987_with_boxes
 
-
 ## Imagehistogram
 ````
 import numpy as np
@@ -154,35 +153,38 @@ Current Number 8Previous Number 7is 15
 
 Current Number 9Previous Number 8is 17
 ````
-## video
-````
+## Video
 
-# import the opencv library 
-import cv2 
-  
-  
-# define a video capture object 
-vid = cv2.VideoCapture(0) 
-  
+import cv2
+
+1.Imports the OpenCV library
+
+vid = cv2.VideoCapture(0)
+
+1.Creates a VideoCapture object named vid which represents the video stream from the default camera (index 0).
+
 while(True): 
-      
-    # Capture the video frame 
-    # by frame 
-    ret, frame = vid.read() 
-  
-    # Display the resulting frame 
-    cv2.imshow('frame', frame) 
-      
-    # the 'q' button is set as the 
-    # quitting button you may use any 
-    # desired button of your choice 
-    if cv2.waitKey(1) & 0xFF == ord('q'): 
+      ret, frame = vid.read()
+
+1.Reads a frame from the video stream.
+2.ret is a boolean value indicating whether the frame was successfully read.
+3.frame is the image frame.
+
+ cv2.imshow('frame', frame)
+
+1.cv2.imshow() is a function in OpenCV used to display images or videos.
+
+      if cv2.waitKey(1) & 0xFF == ord('q'): 
         break
-  
-# After the loop release the cap object 
+
+1.cv2.waitKey() is a function that waits for a key event in a specified time duration.
+
 vid.release() 
-# Destroy all the windows 
 cv2.destroyAllWindows() 
 
+1.Releases the VideoCapture object, releasing the camera.
+
+2.Closes all OpenCV windows.
+  
 
 
