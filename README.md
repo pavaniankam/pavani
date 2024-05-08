@@ -11,6 +11,13 @@ csv_file = "/home/pavaniankam/Downloads/7622202030987_bounding_box.csv"
 image_dir = "/home/pavaniankam/Downloads/7622202030987"
 output_dir = "/home/pavaniankam/Downloads/7622202030987_with_boxes"
 ```
+
+
+
+
+
+
+
 ```
 os.makedirs(output_dir, exist_ok=True)
 def draw_boxes(image, boxes):
