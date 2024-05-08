@@ -117,7 +117,7 @@ plt.show()
 
 ![Figure_1](https://github.com/pavaniankam/pavani/assets/169125920/5272e70b-6280-470c-ad0a-044081045328)
 
-## Range
+## Iteration
 ```
 num = list(range(10))
 previousNum = 0
