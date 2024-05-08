@@ -48,8 +48,7 @@ def crop_image(image, boxes):
 2. For each row, it opens the corresponding image file.
 3. It extracts the bounding box coordinates from the CSV and performs both drawing boxes and cropping images operations.
 4. It saves the cropped images with appropriate filenames in the specified output directory.
-5. It also saves the original images with drawn bounding boxes.
-/home/pavaniankam/Downloads/7622202030987_with_boxes/0_7622202030987_f306535d741c9148dc458acbbc887243_L_487.png
+5. It also saves the original images with drawn bounding boxes
 
 
 
@@ -70,7 +69,7 @@ with open(csv_file, 'r') as file:
         full_image_with_boxes.save(os.path.join(output_dir, f"full_{image_name}"))
 ```
 Here is the Output of this
-/home/pavaniankam/Downloads/7622202030987_with_boxes
+
 
 ## Imagehistogram
 ```
