@@ -111,21 +111,21 @@ plt.show()
 3.Plots the histogram.
 4.Sets the x-axis limits of the plot to [0, 256] which corresponds to the range of pixel values.
 5.Displays the plot.
-
+````
 ## Range
-`
+````
 num = list(range(10))
 previousNum = 0
 for i in num:
-
+```
 1.Creates a list containing numbers from 0 to 9.
 2.Initializes a variable 'previousNum' to store the previous number in the iteration.
 3.Iterates through each number in the 'num' list.
-
+```
 sum = previousNum + i
 print('Current Number '+ str(i) + 'Previous Number ' + str(previousNum) + 'is ' + str(sum)) # <- This is the issue.
 previousNum=i
-`
+```
 1.Calculates the sum of the current number 'i'and the previous number 'previousNum'.
 
 2.This line prints the current number (i), the previous number (previousNum), and their sum (sum).
@@ -153,10 +153,8 @@ Current Number 7Previous Number 6is 13
 Current Number 8Previous Number 7is 15
 
 Current Number 9Previous Number 8is 17
-```
-
+````
 ## video
-
 ````
 
 # import the opencv library 
