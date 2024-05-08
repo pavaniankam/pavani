@@ -115,6 +115,8 @@ plt.show()
 4.Sets the x-axis limits of the plot to [0, 256] which corresponds to the range of pixel values.
 5.Displays the plot.
 
+![Figure_1](https://github.com/pavaniankam/pavani/assets/169125920/5272e70b-6280-470c-ad0a-044081045328)
+
 ## Range
 ```
 num = list(range(10))
