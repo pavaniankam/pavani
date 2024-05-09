@@ -168,69 +168,60 @@ Current Number 8Previous Number 7is 15
 Current Number 9Previous Number 8is 17
 
 ## Video
-```
-# Python program to save a  
-# video using OpenCV 
-  
-   
+```   
 import cv2 
-  
-   
-# Create an object to read  
-# from camera 
+```
+1.Import the OpenCV library.  
+```   
 video = cv2.VideoCapture(0) 
-   
-# We need to check if camera 
-# is opened previously or not 
+```   
+1.Create a VideoCapture object to read frames from the camera.
+```
 if (video.isOpened() == False):  
     print("Error reading video file") 
-  
-# We need to set resolutions. 
-# so, convert them from float to integer. 
+```
+1.Check if the camera is opened successfully.
+```
 frame_width = int(video.get(3)) 
-frame_height = int(video.get(4)) 
-   
+frame_height = int(video.get(4))
 size = (frame_width, frame_height) 
-   
-# Below VideoWriter object will create 
-# a frame of above defined The output  
-# is stored in 'filename.avi' file. 
+```
+1.Get the frame width and height from the camera.   
+2.Define the size of the frames.
+```
 result = cv2.VideoWriter('p.avi',  
                          cv2.VideoWriter_fourcc(*'MJPG'), 
                          10, size) 
-    
+```
+1.Create a VideoWriter object to write frames into a video file.
+```
 while(True): 
     ret, frame = video.read() 
-  
     if ret == True:  
-  
-        # Write the frame into the 
-        # file 'filename.avi' 
+``` 
+1.Start a loop to capture frames from the camera.
+2.Read a frame from the camera.
+3.Check if the frame is captured successfully.
+```
         result.write(frame) 
-  
-        # Display the frame 
-        # saved in the file 
         cv2.imshow('Frame', frame) 
-  
-        # Press S on keyboard  
-        # to stop the process 
         if cv2.waitKey(1) & 0xFF == ord('s'): 
             break
-  
-    # Break the loop 
-    else: 
+       else: 
         break
-  
-# When everything done, release  
-# the video capture and video  
-# write objects 
+```  
+1.Write the frame into the video file.
+2.Display the frame.
+3.heck if the 's' key is pressed to stop recording.
+```
 video.release() 
 result.release() 
-    
-# Closes all the frames 
 cv2.destroyAllWindows() 
-   
-print("The video was successfully saved")
+   print("The video was successfully saved")
+```
+1.Release the resources (camera and video writer) when the loop ends.
+2.Close all OpenCV windows.
+3.Print a message indicating successful completion.
 
 https://github.com/pavaniankam/pavani/assets/169125920/d0ec0f95-8a5f-4cf5-b01c-e7104f6ecc74
 
