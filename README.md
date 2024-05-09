@@ -198,7 +198,8 @@ cv2.destroyAllWindows()
 ```
 1.Releases the VideoCapture object, releasing the camera.
 
-[Screencast from 08-05-24 02:10:54 PM IST.webm](https://github.com/pavaniankam/pavani/assets/169125920/d9932c2e-27a2-42a5-859d-378cdfd24272)
+
+https://github.com/pavaniankam/pavani/assets/169125920/d0ec0f95-8a5f-4cf5-b01c-e7104f6ecc74
 
 
 2.Closes all OpenCV windows.
