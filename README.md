@@ -169,40 +169,72 @@ Current Number 9Previous Number 8is 17
 
 ## Video
 ```
-import cv2
-```
-1.Imports the OpenCV library
-```
-vid = cv2.VideoCapture(0)
-```
-1.Creates a VideoCapture object named vid which represents the video stream from the default camera (index 0).
-```
+# Python program to save a  
+# video using OpenCV 
+  
+   
+import cv2 
+  
+   
+# Create an object to read  
+# from camera 
+video = cv2.VideoCapture(0) 
+   
+# We need to check if camera 
+# is opened previously or not 
+if (video.isOpened() == False):  
+    print("Error reading video file") 
+  
+# We need to set resolutions. 
+# so, convert them from float to integer. 
+frame_width = int(video.get(3)) 
+frame_height = int(video.get(4)) 
+   
+size = (frame_width, frame_height) 
+   
+# Below VideoWriter object will create 
+# a frame of above defined The output  
+# is stored in 'filename.avi' file. 
+result = cv2.VideoWriter('p.avi',  
+                         cv2.VideoWriter_fourcc(*'MJPG'), 
+                         10, size) 
+    
 while(True): 
-      ret, frame = vid.read()
-```
-1.Reads a frame from the video stream.
-2.ret is a boolean value indicating whether the frame was successfully read.
-3.frame is the image frame.
-```
- cv2.imshow('frame', frame)
-```
-1.cv2.imshow() is a function in OpenCV used to display images or videos.
-```
-      if cv2.waitKey(1) & 0xFF == ord('q'): 
+    ret, frame = video.read() 
+  
+    if ret == True:  
+  
+        # Write the frame into the 
+        # file 'filename.avi' 
+        result.write(frame) 
+  
+        # Display the frame 
+        # saved in the file 
+        cv2.imshow('Frame', frame) 
+  
+        # Press S on keyboard  
+        # to stop the process 
+        if cv2.waitKey(1) & 0xFF == ord('s'): 
+            break
+  
+    # Break the loop 
+    else: 
         break
-```
-1.cv2.waitKey() is a function that waits for a key event in a specified time duration.
-```
-vid.release() 
+  
+# When everything done, release  
+# the video capture and video  
+# write objects 
+video.release() 
+result.release() 
+    
+# Closes all the frames 
 cv2.destroyAllWindows() 
-```
-1.Releases the VideoCapture object, releasing the camera.
-
+   
+print("The video was successfully saved")
 
 https://github.com/pavaniankam/pavani/assets/169125920/d0ec0f95-8a5f-4cf5-b01c-e7104f6ecc74
 
 
-2.Closes all OpenCV windows.
-  
+
 
 
